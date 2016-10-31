@@ -20,6 +20,11 @@ public class BrowserFactory {
     static WebDriver driver;
 
     public static WebDriver getDriver() {
+
+        if(driver==null)
+        {
+            BrowserFactory.startBrowser();
+        }
         return driver;
     }
 
@@ -27,11 +32,19 @@ public class BrowserFactory {
         if (AutomationConstants.REMOTE_BROWSER.equalsIgnoreCase("true")) {
             try {
                 System.out.println("grid started in BrowserStack...");
-                DesiredCapabilities capabilities = DesiredCapabilities.chrome();
-                System.setProperty("webdriver.chrome.driver", "chromedriver.exe");
+
+                DesiredCapabilities capabilities = new DesiredCapabilities();
+                if (System.getProperty("Browser").equalsIgnoreCase("firefox")) {
+                    capabilities = DesiredCapabilities.firefox();
+
+                } else if (System.getProperty("Browser").equalsIgnoreCase("chrome")) {
+                    capabilities = DesiredCapabilities.chrome();
+                }
+               // capabilities = DesiredCapabilities.chrome();
                 capabilities.setPlatform(Platform.WINDOWS);
                 capabilities.setVersion("48");
                 capabilities.setCapability("browserstack.debug", "true");
+
                 URL url = new URL(AutomationConstants.SELENIUM_GRID_URL);
                 driver = new RemoteWebDriver(url, capabilities);
                 driver.get(AutomationConstants.URL);
@@ -62,6 +75,7 @@ public class BrowserFactory {
             driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
         }
     }
+
     public static void stopBrowser() {
         driver.quit();
     }

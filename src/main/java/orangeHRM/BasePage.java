@@ -10,7 +10,8 @@ import utils.BrowserFactory;
 
 public class BasePage extends BrowserFactory {
 
-    static WebDriver driver = BrowserFactory.getDriver();
+    WebDriver driver = BrowserFactory.getDriver();
+
     BasePage() {
         PageFactory.initElements(driver, this);
     }

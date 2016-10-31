@@ -22,7 +22,7 @@ public class DashBoardPage extends BasePage {
     @FindBy(xpath = "//div[@id='welcome-menu']/ul")
     private WebElement welcomeMessageContainer;
 
-    WebDriver driver = BrowserFactory.getDriver();
+
     Logger LOGGER = Logger.getLogger(DashBoardPage.class);
 
     public String userIsInDashBoardWelcome() {

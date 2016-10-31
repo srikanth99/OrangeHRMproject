@@ -1,0 +1,168 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 7,
+        "name": "Login the Application",
+        "description": "",
+        "id": "end2end;login-the-application",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 284541761,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User is in the Login Page",
+            "match": {
+              "location": "MyStepdefs.userIsInTheLoginPage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 398952856,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "he provides the Username and Password",
+            "match": {
+              "location": "MyStepdefs.heProvidesTheUsernameAndPassword()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 143185581,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "He is able to login",
+            "match": {
+              "location": "MyStepdefs.heIsAbleToLogin()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 6,
+            "name": "@test"
+          }
+        ]
+      },
+      {
+        "line": 56,
+        "name": "navigate to Add Employee section in PIM",
+        "description": "",
+        "id": "end2end;navigate-to-add-employee-section-in-pim",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 5521560131,
+              "status": "passed"
+            },
+            "line": 57,
+            "name": "user is in the Dashboard Page logged in as admin",
+            "match": {
+              "location": "MyStepdefs.userIsInTheDashboardPageLoggedInAsAdmin()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 7089276939,
+              "status": "passed"
+            },
+            "line": 58,
+            "name": "he access Add Employee tab from PIM Menu",
+            "match": {
+              "location": "MyStepdefs.heAccessAddEmployeeTabFromPIMMenu()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 155908873,
+              "status": "passed"
+            },
+            "line": 59,
+            "name": "he navigates to Add employee page",
+            "match": {
+              "location": "MyStepdefs.heNavigatesToAddEmployeePage()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 55,
+            "name": "@test"
+          }
+        ]
+      },
+      {
+        "line": 62,
+        "name": "Add employee with valid details",
+        "description": "",
+        "id": "end2end;add-employee-with-valid-details",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 187352331,
+              "status": "passed"
+            },
+            "line": 63,
+            "name": "user is in Add EmployeeTab",
+            "match": {
+              "location": "MyStepdefs.userIsInAddEmployeeTab()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2532226578,
+              "status": "passed"
+            },
+            "line": 64,
+            "name": "He provides valid employee details",
+            "match": {
+              "location": "MyStepdefs.heProvidesValidEmployeeDetails()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 5978461423,
+              "status": "passed"
+            },
+            "line": 65,
+            "name": "he is navigated to Personal Details page of PIM",
+            "match": {
+              "location": "MyStepdefs.heIsNavigatedToPersonalDetailsPageOfPIM()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 61,
+            "name": "@test"
+          }
+        ]
+      }
+    ],
+    "name": "End2End",
+    "description": "As a Admin user\r\nI want to Login the Application\r\nSo that I can navigate to different facilities of the application",
+    "id": "end2end",
+    "keyword": "Feature",
+    "uri": "Smoke.feature"
+  }
+]

@@ -1,0 +1,8 @@
+orangeHRM\PIMPage.class
+orangeHRM\DashBoardPage.class
+utils\Utilities.class
+orangeHRM\LoginPage.class
+utils\AutomationConstants.class
+utils\BrowserFactory.class
+orangeHRM\BasePage.class
+orangeHRM\AdminPage.class
