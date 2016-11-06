@@ -12,7 +12,7 @@ import utils.BrowserFactory;
  */
 
 @RunWith(Cucumber.class)
-@CucumberOptions(plugin = {"pretty", "html:target/Report.HTML", "json:target/Report.Json"}, tags = {"@test"}, features = {"src\\test\\resources\\Feature"})
+@CucumberOptions(plugin = {"pretty", "html:target/Report.HTML", "json:target/Report.Json"}, tags = {"@test"}, features = {"src/test/resources/Feature/"})
 
 public class RunnerClass {
 
