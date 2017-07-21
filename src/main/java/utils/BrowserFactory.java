@@ -12,10 +12,6 @@ import org.openqa.selenium.safari.SafariDriver;
 import java.net.URL;
 import java.util.concurrent.TimeUnit;
 
-/**
- * Created by theop on 14/10/2016.
- */
-
 public class BrowserFactory {
     static WebDriver driver;
 
