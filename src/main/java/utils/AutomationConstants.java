@@ -11,5 +11,5 @@ public class AutomationConstants {
     public static final String PASSWORD = "aediMNjU";
     public static final String BROWSER_TYPE = "chrome";
     public static final String REMOTE_BROWSER = "true";
-    public static final String SELENIUM_GRID_URL = "https://visvaroobini1:BdnyQXysnNUeept8xpvz@hub-cloud.browserstack.com/wd/hub";
+    public static final String SELENIUM_GRID_URL = "https://sri123:BdnyQXysnNUeept8xpvz@hub-cloud.browserstack.com/wd/hub";
 }
